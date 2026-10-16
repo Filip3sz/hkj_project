@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080c1a">
+  <meta name="description" content="Interaktywna prezentacja: Motoryzacja w Japonii — historia, kultura, JDM, drift i technologie. 12 rozdziałów w klimacie neonowego Tokio.">
+  <title>HKJ — Motoryzacja w Japonii | s36010 & s35455</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="notes-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#origins">Pomiń wstęp i przejdź do treści</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="progress-bar" aria-hidden="true"></div>
+  <header class="topbar" id="topbar">
+    <a href="#start" class="brand" aria-label="Wróć do początku"><span class="brand-mark">日</span><span>JPN<span class="brand-slash">/</span>MOTOR<span class="brand-tiny">文化</span></span></a>
+    <div class="topbar-center"><span class="signal-dot"></span> TOKYO // 35° 41' N <span class="topbar-divider"></span> HISTORIA I KULTURA JAPONI - MOTORYZACJA BY FILIP BOCIAN s36010 & JAKUB BRZOZOWSKI s35455</div>
+    <div class="topbar-actions">
+      <span class="chapter-current" id="chapter-count">01 / 12</span>
+      <button class="icon-button note-trigger" id="notes-open" title="Notatki dla prezentującego [N]" aria-label="Notatki dla prezentującego"><svg viewBox="0 0 24 24"><path d="M7 4h10M7 9h10M7 14h7M5 3h14v18H5z"/></svg></button>
+      <button class="icon-button" id="fullscreen-btn" title="Pełny ekran [F]" aria-label="Pełny ekran"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></button>
+      <button class="menu-trigger" id="menu-trigger" aria-controls="chapter-drawer" aria-expanded="false"><span>MENU</span><i></i><i></i></button>
+    </div>
+  </header>
+  <nav class="chapter-rail" aria-label="Szybka nawigacja po rozdziałach" id="chapter-rail"></nav>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="chapter-drawer" id="chapter-drawer" aria-hidden="true">
+    <div class="drawer-head"><span class="eyebrow">SELECT CHAPTER // 章</span><button id="drawer-close" class="close-btn" aria-label="Zamknij menu">×</button></div>
+    <h2>Wybierz<br><em>rozdział.</em></h2>
+    <div class="drawer-list" id="drawer-list"></div>
+    <div class="drawer-bottom">12 ROZDZIAŁÓW <span>•</span> KLAWIATURA: ← → N F</div>
+  </aside>
+
+  <main>
+    <!-- 01 -->
+    <section id="start" class="chapter chapter-hero" data-title="Otwarcie" data-number="01">
+      <div class="hero-scene" aria-hidden="true"><div class="hero-city"></div><div class="hero-city-shade"></div><div class="hero-road-glow"></div><img class="hero-car" src="assets/car-gtr.svg" alt=""><div class="light-flare flare-one"></div><div class="light-flare flare-two"></div></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="chapter-inner hero-inner">
+        <div class="hero-overline"><span class="tiny-line"></span> AN INTERACTIVE JOURNEY THROUGH JAPAN <span class="jp-overline">日本の自動車文化</span></div>
+        <div class="hero-copy">
+          <p class="hero-kicker">JAPAN / AUTOMOTIVE CULTURE / 1907—NOW</p>
+          <h1>JAPAN<span class="hero-type">:</span><br><span class="glow-italic">AFTER</span><br><span class="outline-title">DARK</span><span class="hero-star">✳</span></h1>
+          <p class="hero-description">Od małych samochodów kei, przez legendy JDM, aż po technologie, które zmieniły świat. <strong>Motoryzacja w Japonii</strong> to więcej niż maszyny.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#origins"><span>ROZPOCZNIJ PODRÓŻ</span><span class="btn-arrow">↗</span></a><span class="hero-duration"><span class="clock-icon">◷</span> 12 ROZDZIAŁÓW <small>~15 MIN</small></span></div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO EXPLORE <span class="scroll-indicator">↓</span></span><span class="hero-kanji">車 <small>R U C H &nbsp; / &nbsp; K U L T U R A</small></span><span>01 // 12</span></div>
+      </div>
+      <div class="hero-sideword" aria-hidden="true">東京夜行</div>
+    </section>
+
+    <!-- 02 -->
+    <section id="origins" class="chapter chapter-origins" data-title="Narodziny przemysłu" data-number="02">
+      <div class="chapter-inner">
+        <div class="section-meta"><span>02 / 12</span><span>THE BEGINNING // 起源</span><span>1907—1948</span></div>
+        <div class="split-head"><div><p class="eyebrow pink">02 / OD CZEGO WSZYSTKO SIĘ ZACZĘŁO?</p><h2>Od krosien<br>do <em>samochodów.</em></h2></div><p class="section-lead">Zanim powstały ikony JDM, Japonia musiała zbudować własny przemysł motoryzacyjny — krok po kroku, od pierwszych prototypów.</p></div>
+        <div class="origins-layout">
+          <div class="origin-year"><span class="vertical-micro">THE ROAD TO THE FUTURE</span><strong id="timeline-year">1907</strong><div class="origin-year-line"></div><span class="origin-caption" id="timeline-caption">Pierwsze próby budowy aut</span><div class="origin-stamp">始まり<span>THE ORIGIN</span></div></div>
+          <div class="timeline-panel">
+            <div class="timeline-track" id="timeline-track" role="group" aria-label="Przełomowe lata historii"><button class="timeline-year active" data-index="0">1907</button><button class="timeline-year" data-index="1">1933</button><button class="timeline-year" data-index="2">1937</button><button class="timeline-year" data-index="3">1948</button></div>
+            <div class="timeline-content" id="timeline-content"><span class="mini-tag">PIONIERSKA ERA</span><h3>Takuri — jeden z pierwszych japońskich samochodów benzynowych</h3><p>W 1907 roku powstała konstrukcja Takuri, przypominająca, że pierwsze kroki japońskiej motoryzacji były eksperymentami lokalnych konstruktorów.</p></div>
+            <p class="interaction-hint">↗ KLIKNIJ DATĘ, ABY POZNAĆ HISTORIĘ</p>
+          </div>
+        </div>
+      </div>
+      <div class="background-word" aria-hidden="true">ORIGIN</div>
+    </section>
+
+    <!-- 03 -->
+    <section id="everyday" class="chapter chapter-everyday" data-title="Samochód dla każdego" data-number="03">
+      <div class="chapter-inner"><div class="section-meta"><span>03 / 12</span><span>SMALL CAR. BIG IDEA.</span><span>1950s—1960s</span></div>
+        <div class="bento-top"><div><p class="eyebrow cyan">03 / POWOJENNA JAPONIA</p><h2>Małe auta.<br><em>Wielka zmiana.</em></h2></div><div class="intro-aside"><span class="vertical-tag">軽自動車 / KEI JIDŌSHA</span><p>Gęste miasta, ograniczona przestrzeń i potrzeba taniego transportu stworzyły wyjątkową kategorię samochodów: <strong>kei car.</strong></p></div></div>
+        <div class="bento-grid"><article class="bento-card kei-large"><div class="bento-label">JAPANESE MICRO CAR CULTURE <span>↗</span></div><div class="kei-illustration"><div class="kei-box"><div class="kei-windshield"></div><div class="kei-smile"></div><i class="wheel one"></i><i class="wheel two"></i></div><div class="kei-halo"></div></div><div><h3>KEI CAR <span>軽</span></h3><p>Inteligentne wykorzystanie każdego centymetra. Typ małego auta z wyjątkową rolą na rynku japońskim.</p></div></article>
+        <article class="bento-card spec-card"><span class="bento-label">OBECNY LIMIT SILNIKA</span><div class="spec-value">660<span>cm³</span></div><p>Dopuszczalna maksymalna pojemność silnika współczesnego kei cara.</p><div class="spec-line"></div></article>
+        <article class="bento-card year-card"><span class="bento-label">SUBARU 360</span><div class="year-value">1958</div><p>Symbol powojennej motoryzacji dostępnej dla szerszej grupy Japończyków.</p><span class="year-outline">360°</span></article>
+        <article class="bento-card corolla-card"><span class="bento-label">TOYOTA COROLLA</span><div class="year-value">1966</div><p>Premiera modelu, który pomógł japońskiej motoryzacji zdobyć globalną popularność.</p><span class="pill-light">GLOBAL IMPACT ↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section id="philosophy" class="chapter chapter-philosophy" data-title="Filozofia Kaizen" data-number="04">
+      <div class="chapter-inner"><div class="section-meta"><span>04 / 12</span><span>THE JAPANESE WAY // 改善</span><span>PHILOSOPHY</span></div>
+        <div class="philosophy-hero"><span class="big-kanji" aria-hidden="true">改善</span><div><p class="eyebrow pink">04 / JAKOŚĆ JAKO FILOZOFIA</p><h2>KAIZEN<span class="dot-accent">.</span></h2><p class="big-subheading">Nieustanne doskonalenie.<br>Nawet o <em>1% każdego dnia.</em></p><p class="small-explain">„1%” to metafora małych usprawnień, nie konkretna reguła Toyoty. System produkcji zmienił sposób myślenia o jakości na świecie.</p></div></div>
+        <div class="method-grid"><button class="method-card active" data-method="0"><span>01 / 改善</span><strong>KAIZEN</strong><span>Małe usprawnienia</span><span class="method-arrow">↗</span></button><button class="method-card" data-method="1"><span>02 / ジャストインタイム</span><strong>JUST-IN-TIME</strong><span>We właściwym momencie</span><span class="method-arrow">↗</span></button><button class="method-card" data-method="2"><span>03 / 自働化</span><strong>JIDOKA</strong><span>Jakość od początku</span><span class="method-arrow">↗</span></button></div>
+        <div class="method-detail" id="method-detail"><div><span class="mini-tag">FILAR JAPOŃSKIEJ PRODUKCJI</span><h3>Ciągłe doskonalenie</h3></div><p>Pracownicy obserwują proces i zgłaszają drobne zmiany, które usprawniają pracę, ograniczają straty i pomagają utrzymywać jakość.</p></div>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section id="global" class="chapter chapter-global" data-title="Podbój świata" data-number="05">
+      <div class="chapter-inner"><div class="section-meta"><span>05 / 12</span><span>MADE IN JAPAN // WORLDWIDE</span><span>1970s—1980s</span></div>
+        <div class="split-head"><div><p class="eyebrow cyan">05 / GLOBALNY PRZEŁOM</p><h2>Z Tokio.<br><em>Na cały świat.</em></h2></div><p class="section-lead">Oszczędność, jakość i przemyślana konstrukcja stały się wizytówką japońskich marek.</p></div>
+        <div class="global-map-panel"><div class="orbital-ring orbital-one"></div><div class="orbital-ring orbital-two"></div><div class="world-grid"></div><div class="route-line line-a"></div><div class="route-line line-b"></div><div class="globe-hub hub-japan"><span class="hub-pulse"></span><strong>TOKYO</strong><small>JAPAN</small></div><div class="globe-hub hub-america"><i></i><strong>USA</strong><small>EKSPORT</small></div><div class="globe-hub hub-europe"><i></i><strong>EUROPA</strong><small>EKSPORT</small></div><div class="map-label">GLOBAL EXPANSION <span>// 1973</span></div><div class="oil-crisis"><span class="mono-small">PUNKT ZWROTNY</span><strong>1973</strong><p>Kryzys naftowy zwiększa zainteresowanie autami oszczędnymi.</p></div></div>
+        <div class="global-bottom"><div><span class="small-number">01</span><strong>Niezawodność</strong><p>Reputacja budowana na codziennej użyteczności.</p></div><div><span class="small-number">02</span><strong>Efektywność</strong><p>Mniejsze zużycie paliwa staje się ważną zaletą.</p></div><div><span class="small-number">03</span><strong>Globalizacja</strong><p>Rozwój eksportu i produkcji za granicą.</p></div></div>
+      </div>
+    </section>
+
+    <!-- 06 -->
+    <section id="racing" class="chapter chapter-racing" data-title="Motorsport" data-number="06">
+      <div class="chapter-inner"><div class="section-meta"><span>06 / 12</span><span>BORN TO COMPETE</span><span>MOTORSPORT</span></div>
+        <div class="racing-layout"><div><p class="eyebrow pink">06 / LABORATORIUM NA TORZE</p><h2>Wyścigi.<br><em>Rajdy.</em><br>Legenda.</h2><p class="section-lead">Od rajdowych tras po legendarny Le Mans. Japonia udowodniła, że jej technologia sprawdza się także w ekstremalnej rywalizacji sportowej.</p><div class="racing-micro"><span class="race-light"></span> RACING DNA / TRACK ONLY</div></div>
+          <div class="lemans-card"><div class="lemans-top"><span>24 HOURS OF LE MANS</span><span>FRANCE, 1991</span></div><div class="lemans-number">1991<span>WINNER.</span></div><div class="lemans-car"><svg viewBox="0 0 500 120" role="img" aria-label="Stylizowana sylwetka prototypu wyścigowego"><defs><linearGradient id="racer" x2="1" y2="0"><stop stop-color="#ffad64"/><stop offset=".5" stop-color="#f27098"/><stop offset="1" stop-color="#5fe4dd"/></linearGradient></defs><path d="M12 82l78-10 31-26 96-4 45 20h105l67 22 43 7-16 12H24Z" fill="url(#racer)"/><path d="M139 48h68l26 13H117Z" fill="#0b1731"/><path d="M322 61l14-36h18l14 37" stroke="#f9b27b" stroke-width="8" fill="none"/><circle cx="124" cy="91" r="25" fill="#0c1020" stroke="#778097" stroke-width="6"/><circle cx="385" cy="91" r="25" fill="#0c1020" stroke="#778097" stroke-width="6"/></svg></div><div class="lemans-bottom"><div><strong>MAZDA 787B</strong><p>Pierwsze zwycięstwo japońskiego samochodu w klasyfikacji generalnej Le Mans.</p></div><span class="rotary-chip">ROTARY<br>POWER</span></div></div>
+        </div><div class="race-tickers"><span>WRC <b>SUBARU IMPREZA</b></span><span class="ticker-divider">✳</span><span>WRC <b>MITSUBISHI LANCER EVO</b></span><span class="ticker-divider">✳</span><span>ENDURANCE <b>MAZDA 787B</b></span></div>
+      </div>
+    </section>
+
+    <!-- 07 -->
+    <section id="legends" class="chapter chapter-legends" data-title="Legendy lat 90." data-number="07">
+      <div class="chapter-inner"><div class="section-meta"><span>07 / 12</span><span>THE GOLDEN ERA // 黄金時代</span><span>1990s</span></div>
+        <div class="split-head legend-head"><div><p class="eyebrow pink">07 / GARAŻ IKON</p><h2>JAPANESE<br><em>LEGENDS.</em></h2></div><p class="section-lead">Cztery różne filozofie. Jeden złoty okres. <strong>Wybierz auto,</strong> aby zobaczyć jego historię i charakter.</p></div>
+        <div class="garage-grid"><button class="car-card" data-car="gtr"><span class="car-index">01 / GODZILLA</span><img src="assets/car-gtr.svg" alt="Stylizowana ilustracja Nissana Skyline GT-R R32" loading="lazy"><span class="car-heading"><span><small>NISSAN / 1989</small><strong>SKYLINE <em>GT-R</em></strong></span><span class="car-open">↗</span></span><span class="car-signature">RB26DETT • AWD</span></button>
+          <button class="car-card" data-car="supra"><span class="car-index">02 / ICONIC STRAIGHT SIX</span><img src="assets/car-supra.svg" alt="Stylizowana ilustracja Toyoty Supry A80" loading="lazy"><span class="car-heading"><span><small>TOYOTA / 1993</small><strong>SUPRA <em>A80</em></strong></span><span class="car-open">↗</span></span><span class="car-signature">2JZ-GTE • RWD</span></button>
+          <button class="car-card" data-car="rx7"><span class="car-index">03 / ROTARY SOUL</span><img src="assets/car-rx7.svg" alt="Stylizowana ilustracja Mazdy RX-7 FD" loading="lazy"><span class="car-heading"><span><small>MAZDA / 1991</small><strong>RX-7 <em>FD</em></strong></span><span class="car-open">↗</span></span><span class="car-signature">13B-REW • ROTARY</span></button>
+          <button class="car-card" data-car="nsx"><span class="car-index">04 / PRECISION MACHINE</span><img src="assets/car-nsx.svg" alt="Stylizowana ilustracja Hondy NSX" loading="lazy"><span class="car-heading"><span><small>HONDA / 1990</small><strong>NSX <em>NA1</em></strong></span><span class="car-open">↗</span></span><span class="car-signature">V6 VTEC • MID-ENGINE</span></button></div>
+        <div class="garage-footnote">ILUSTRACJE AUTORSKIE, STYLIZOWANE • DATY DEBIUTÓW POSZCZEGÓLNYCH GENERACJI</div>
+      </div>
+    </section>
+
+    <!-- 08 -->
+    <section id="technology" class="chapter chapter-tech" data-title="Innowacje techniczne" data-number="08">
+      <div class="chapter-inner"><div class="section-meta"><span>08 / 12</span><span>ENGINEERING THE FUTURE</span><span>TECHNOLOGY</span></div><div class="split-head"><div><p class="eyebrow cyan">08 / JAPOŃSKA INŻYNIERIA</p><h2>Technika,<br>która <em>zmieniała zasady.</em></h2></div><p class="section-lead">Nie tylko większa moc — także sprytniejsze silniki, trakcja i mniejsze zużycie paliwa.</p></div>
+        <div class="tech-layout"><div class="tech-selector" role="tablist" aria-label="Wybierz technologię"><button class="tech-option active" role="tab" aria-selected="true" data-tech="0"><span>01</span><strong>VTEC</strong><small>HONDA / ZAWORY</small><span>↗</span></button><button class="tech-option" role="tab" aria-selected="false" data-tech="1"><span>02</span><strong>ROTARY</strong><small>MAZDA / WANKEL</small><span>↗</span></button><button class="tech-option" role="tab" aria-selected="false" data-tech="2"><span>03</span><strong>AWD</strong><small>NISSAN, SUBARU / TRAKCJA</small><span>↗</span></button><button class="tech-option" role="tab" aria-selected="false" data-tech="3"><span>04</span><strong>HYBRID</strong><small>TOYOTA / 1997</small><span>↗</span></button></div>
+          <div class="tech-feature" id="tech-feature"><div class="tech-feature-top"><span class="mini-tag">01 / ENGINE SYSTEM</span><span>HONDA</span></div><div class="engine-visual"><span class="engine-orbit orbit-a"></span><span class="engine-orbit orbit-b"></span><span class="engine-center">VTEC</span><span class="engine-code">VARIABLE VALVE TIMING<br>& LIFT ELECTRONIC CONTROL</span></div><h3>Zmienna charakterystyka silnika</h3><p>System Hondy dobiera charakterystykę działania zaworów do warunków pracy silnika. To jeden z najbardziej rozpoznawalnych symboli inżynierii marki.</p></div></div>
+      </div>
+    </section>
+
+    <!-- 09 -->
+    <section id="jdm" class="chapter chapter-jdm" data-title="Czym jest JDM?" data-number="09">
+      <div class="chapter-inner"><div class="section-meta"><span>09 / 12</span><span>THE CULTURE // 国内市場</span><span>JDM</span></div>
+        <div class="jdm-hero"><span class="jdm-ghost" aria-hidden="true">JDM</span><p class="eyebrow pink">09 / WIĘCEJ NIŻ TRZY LITERY</p><h2>J<span class="outline-letter">D</span>M<span class="dot-accent">.</span></h2><p><strong>Japanese Domestic Market</strong> — japoński rynek wewnętrzny.</p></div>
+        <div class="jdm-split"><div class="jdm-definition"><span class="mini-tag">ZNACZENIE ŚCISŁE</span><h3>Rynek, nie styl.</h3><p>JDM określa auta i części przygotowane na japoński rynek. Samochód japońskiej marki sprzedany w Europie nie musi być specyfikacją JDM.</p><div class="definition-sign"><span>JAPAN</span><span>→</span><span>DOMESTIC MARKET</span></div></div><div class="jdm-culture"><span class="mini-tag">ZNACZENIE POTOCZNE</span><h3>Kultura fanów.</h3><p>W kulturze popularnej JDM oznacza też spotkania, personalizację, szacunek dla klasyków i estetykę japońskiej motoryzacji.</p><div class="culture-tags"><span>RESTORATION</span><span>CAR MEETS</span><span>DESIGN</span><span>COMMUNITY</span></div></div></div>
+        <p class="jdm-footer-note">JDM ≠ każdy zmodyfikowany samochód japońskiej marki. To ważne rozróżnienie.</p>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section id="popculture" class="chapter chapter-culture" data-title="Drift i popkultura" data-number="10">
+      <div class="chapter-inner"><div class="section-meta"><span>10 / 12</span><span>BEYOND THE SCREEN</span><span>DRIFT / CULTURE</span></div>
+        <div class="split-head"><div><p class="eyebrow cyan">10 / NARODZINY IKON POPKULTURY</p><h2>Nocne światła.<br><em>Globalny fenomen.</em></h2></div><p class="section-lead">Technika spotyka komiksy, gry, kino i zorganizowany motorsport. Tak rodzi się mit Tokio po zmroku.</p></div>
+        <div class="culture-deck"><article class="culture-card culture-tsuchiya"><span class="culture-number">01 / SPORT</span><div class="culture-art"><span class="slanted-track"></span><span class="speed-mark">D1</span></div><div><span class="mini-tag">2001 / D1 GRAND PRIX</span><h3>Drift na torze</h3><p>Japońska scena driftingowa rozwinęła się w profesjonalną dyscyplinę ocenianą pod kątem kontroli i płynności jazdy.</p></div></article><article class="culture-card culture-manga"><span class="culture-number">02 / MANGA</span><div class="culture-art"><span class="manga-text">頭文字<br><b>D</b></span></div><div><span class="mini-tag">1995 / INITIAL D</span><h3>Historie na papierze</h3><p>Manga „Initial D” zbudowała rozpoznawalny obraz kultury motoryzacyjnej Japonii.</p></div></article><article class="culture-card culture-film"><span class="culture-number">03 / CINEMA</span><div class="culture-art"><span class="film-lines"></span><span class="film-neon">TOKYO<br><i>DRIFT</i></span></div><div><span class="mini-tag">2006 / THE FAST AND THE FURIOUS</span><h3>Tokio na ekranie</h3><p>Film „Tokyo Drift” spopularyzował estetykę neonowej motoryzacji wśród widzów z całego świata.</p></div></article></div>
+        <div class="safety-strip"><span>✳</span><p><strong>Film a rzeczywistość:</strong> widowiskowy drift to sport uprawiany na zamkniętych, przygotowanych do tego obiektach — nie w zwykłym ruchu ulicznym.</p></div>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section id="future" class="chapter chapter-future" data-title="Przyszłość Japonii" data-number="11">
+      <div class="chapter-inner"><div class="section-meta"><span>11 / 12</span><span>BEYOND THE HORIZON // 未来</span><span>2014—FUTURE</span></div>
+        <div class="future-title"><p class="eyebrow pink">11 / CO DALEJ?</p><h2>THE FUTURE<br><em>IS IN MOTION.</em></h2><p>Japońskie marki szukają różnych sposobów na połączenie mobilności, efektywności i troski o środowisko.</p></div>
+        <div class="future-grid"><article class="future-card"><div class="future-icon">↗</div><span>01 / HEV</span><h3>Hybrydy</h3><p>Rozwiązania oszczędzające paliwo, rozwijane na szeroką skalę od Priusa z 1997 roku.</p><div class="future-bottom">1997 / PRIUS</div></article><article class="future-card"><div class="future-icon">⚡</div><span>02 / BEV</span><h3>Elektryki</h3><p>Napęd bateryjny i nowe platformy wymagające rozwoju infrastruktury ładowania.</p><div class="future-bottom">BATTERY ELECTRIC</div></article><article class="future-card"><div class="future-icon">◈</div><span>03 / FCEV</span><h3>Wodór</h3><p>Ogniwa paliwowe, z którymi Toyota eksperymentuje m.in. w modelu Mirai.</p><div class="future-bottom">2014 / MIRAI</div></article><article class="future-card"><div class="future-icon">軽</div><span>04 / URBAN</span><h3>Mobilność miejska</h3><p>Małe auta i rozwiązania dostosowane do przestrzeni japońskich miast.</p><div class="future-bottom">SMALL IS SMART</div></article></div>
+        <div class="future-manifesto"><span>過去 × 未来</span><p>TRADYCJA <em>×</em> INNOWACJA</p><span>PAST MEETS FUTURE</span></div>
+      </div>
+    </section>
+
+    <!-- 12 -->
+    <section id="finale" class="chapter chapter-finale" data-title="Finał i quiz" data-number="12">
+      <div class="chapter-inner"><div class="section-meta"><span>12 / 12</span><span>FINAL CHECKPOINT // 最後</span><span>QUIZ TIME</span></div>
+        <div class="finale-layout"><div class="finale-left"><p class="eyebrow cyan">12 / KONIEC TRASY, POCZĄTEK PASJI</p><h2>WIĘCEJ<br>NIŻ <em>AUTA.</em></h2><p>Japońska motoryzacja to historia wynalazczości, powojennej odbudowy, precyzji i kultury, która wykroczyła daleko poza granice Japonii.</p><div class="final-quote">“Od kei carów po legendy JDM — ciągłe doskonalenie napędza całą historię.”</div><a href="#start" class="btn btn-ghost">↗ WRÓĆ NA START</a></div>
+          <div class="quiz-panel" id="quiz-panel"><div class="quiz-top"><span>INTERACTIVE CHECKPOINT</span><span id="quiz-counter">01 / 04</span></div><div class="quiz-status"><div id="quiz-progress"></div></div><span class="quiz-eyebrow">SPRAWDŹ, CO ZAPAMIĘTAŁEŚ</span><h3 id="quiz-question">Co oznacza skrót JDM?</h3><div class="quiz-options" id="quiz-options"></div><div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div><button class="btn btn-primary quiz-next" id="quiz-next" disabled>DALEJ <span>→</span></button></div></div>
+        <footer class="site-footer"><div><strong>JPN<span>/</span>MOTOR</strong><span>HISTORIA I KULTURA JAPONII — PROJEKT EDUKACYJNY BY FILIP BOCIAN s36010 & JAKUB BRZOZOWSKI s35455</span></div><div class="sources-footer"><button id="sources-trigger">ŹRÓDŁA I INFORMACJE ↗</button><span>DESIGNED IN THE SPIRIT OF TOKYO AFTER DARK</span></div></footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="control-hint" id="control-hint"><kbd>←</kbd><kbd>→</kbd> NAWIGACJA <span></span> <kbd>N</kbd> NOTATKI <span></span> <kbd>F</kbd> PEŁNY EKRAN</div>
+  <div class="next-chapter" id="next-chapter"><button aria-label="Przejdź do kolejnego rozdziału" id="next-btn"><span>NASTĘPNY ROZDZIAŁ</span> ↓</button></div>
+
+  <dialog id="car-dialog" class="car-dialog"><button class="dialog-close" data-close="car-dialog" aria-label="Zamknij okno">×</button><div id="car-dialog-body"></div></dialog>
+  <dialog id="notes-dialog" class="notes-dialog"><div class="notes-modal-head"><span>PRIVATE PRESENTER NOTES / NOTATKI</span><button class="dialog-close" data-close="notes-dialog" aria-label="Zamknij notatki">×</button></div><div class="notes-modal-body"><p class="eyebrow pink">TYLKO DO PREZENTACJI</p><h2 id="notes-title">ROZDZIAŁ 01</h2><div class="notes-switcher"><button id="note-prev">← POPRZEDNI</button><span id="notes-position">01 / 12</span><button id="note-next">NASTĘPNY →</button></div><p id="notes-text"></p><div class="notes-actions"><button id="copy-notes">KOPIUJ TEKST ↗</button><span>TE SAME TEKSTY ZNAJDZIESZ W PLIKACH /scripts/*.txt</span></div></div></dialog>
+  <dialog id="sources-dialog" class="sources-dialog"><button class="dialog-close" data-close="sources-dialog" aria-label="Zamknij źródła">×</button><p class="eyebrow cyan">BIBLIOGRAFIA</p><h2>Źródła<br><em>i przypisy.</em></h2><p>Główne daty i fakty zweryfikowano w materiałach producentów. Grafiki są autorskimi, stylizowanymi ilustracjami, a nie fotografiami modeli.</p><div class="source-links"><a href="https://www.toyota-global.com/company/history_of_toyota/75years/" target="_blank" rel="noopener noreferrer">Toyota — 75 Years of Toyota <span>↗</span></a><a href="https://www.toyota-global.com/company/history_of_toyota/75years/data/automotive_business/production/system/change.html" target="_blank" rel="noopener noreferrer">Toyota Production System <span>↗</span></a><a href="https://www.mazda.com/en/experience/mspr/motorsports/lemans/" target="_blank" rel="noopener noreferrer">Mazda — 1991 Le Mans <span>↗</span></a><a href="https://global.toyota/en/prius20th/evolution/" target="_blank" rel="noopener noreferrer">Toyota — Evolution of the Prius <span>↗</span></a><a href="https://www.toyota-industries.com/company/history_2/" target="_blank" rel="noopener noreferrer">Toyota Industries — Company History <span>↗</span></a></div><small>Szczegółowe źródła oraz objaśnienia znajdują się też w pliku ŹRÓDŁA.txt.</small></dialog>
+</body>
+</html>

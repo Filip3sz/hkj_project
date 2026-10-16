@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" role="img" aria-label="Autorska ilustracja sportowego samochodu inspirowana NSX"><defs>
+ <linearGradient id="paint" x1=".1" y1="0" x2=".7" y2="1"><stop stop-color="#ffffff"/><stop offset=".3" stop-color="#e8e8f4"/><stop offset=".66" stop-color="#9c9cba"/><stop offset="1" stop-color="#101b41"/></linearGradient>
+ <linearGradient id="glass" x2=".6" y2="1"><stop stop-color="#78c7de" stop-opacity=".9"/><stop offset=".4" stop-color="#11263f"/><stop offset="1" stop-color="#060e26"/></linearGradient>
+ <linearGradient id="tire" x2="0" y2="1"><stop stop-color="#11152b"/><stop offset=".5" stop-color="#010410"/><stop offset="1" stop-color="#17152c"/></linearGradient>
+ <radialGradient id="rim"><stop stop-color="#c3d3e7"/><stop offset=".5" stop-color="#5c647a"/><stop offset="1" stop-color="#20243c"/></radialGradient>
+ <filter id="neonglow"><feGaussianBlur stdDeviation="9" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shadow"><feGaussianBlur stdDeviation="20"/></filter></defs>
+ <ellipse cx="500" cy="376" rx="389" ry="32" fill="#e8e8f4" opacity=".45" filter="url(#shadow)"/>
+ <path d="M93 326 L134 264 Q148 244 216 234 L286 174 Q316 142 469 139 L591 155 Q635 165 686 219 L789 228 Q843 236 860 272 L851 329 L807 345 L157 345 Q94 347 93 326Z" fill="url(#paint)" stroke="#ffffff" stroke-width="3"/>
+ <path d="M289 176Q325 148 464 148L473 227L221 232Z" fill="url(#glass)" stroke="#ffffff" stroke-width="4" opacity=".92"/>
+ <path d="M485 150L582 165Q635 181 675 221L493 228Z" fill="url(#glass)" stroke="#ffffff" stroke-width="4" opacity=".9"/>
+ <path d="M480 155L491 226" stroke="#c6f6ff" opacity=".7" stroke-width="5"/>
+ <path d="M109 281Q470 272 841 282" stroke="#ffffff" opacity=".44" stroke-width="3" fill="none"/>
+ <path d="M138 290 Q455 302 811 284" stroke="#0e1532" stroke-width="10" opacity=".6" fill="none"/>
+ <path d="M143 322H820" stroke="#090d23" opacity=".7" stroke-width="12"/>
+ <path d="M316 247L599 243" stroke="#e2f9fc" stroke-width="2" opacity=".4"/>
+ <path d="M670 224L800 242" stroke="#fff8fc" stroke-width="4" opacity=".45"/>
+ <rect x="555" y="251" width="40" height="7" rx="3" fill="#11172b"/>
+ <path d="M111 265 Q130 246 175 243 L202 258 L180 277 L112 279Z" fill="#ffffff" opacity=".9" filter="url(#neonglow)"/>
+ <path d="M779 235L834 253L845 267L776 261Z" fill="#f7b3c3" filter="url(#neonglow)"/>
+ <path d="M107 318L144 311L163 331L125 337Z" fill="#0c122b"/>
+ <path d="M779 323L851 315L842 341L779 343Z" fill="#0a1028"/>
+ <path d="M215 236L282 189Q329 158 463 152" fill="none" stroke="white" stroke-width="4" opacity=".65"/><path d="M730 239l74 1" stroke="white" stroke-width="12" opacity=".8"/><path d="M152 257l83-7" stroke="#d9ffff" stroke-width="10"/><circle cx="263" cy="333" r="74" fill="url(#tire)" stroke="#141629" stroke-width="8"/>
+ <circle cx="263" cy="333" r="52" fill="url(#rim)" stroke="#9299ae" stroke-width="5"/>
+ <circle cx="263" cy="333" r="43" fill="#11182d" stroke="#d7e1ed" stroke-width="2"/>
+ <g transform="translate(263 333)" fill="#aebdd1"><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(0)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(60)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(120)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(180)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(240)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(300)"/></g><circle cx="263" cy="333" r="13" fill="#c5d7e7"/><circle cx="263" cy="333" r="4" fill="#333b56"/><circle cx="711" cy="333" r="74" fill="url(#tire)" stroke="#141629" stroke-width="8"/>
+ <circle cx="711" cy="333" r="52" fill="url(#rim)" stroke="#9299ae" stroke-width="5"/>
+ <circle cx="711" cy="333" r="43" fill="#11182d" stroke="#d7e1ed" stroke-width="2"/>
+ <g transform="translate(711 333)" fill="#aebdd1"><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(0)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(60)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(120)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(180)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(240)"/><path d="M-6 -12L-11 -41L11 -41L6 -12Z" transform="rotate(300)"/></g><circle cx="711" cy="333" r="13" fill="#c5d7e7"/><circle cx="711" cy="333" r="4" fill="#333b56"/><path d="M100 351H851" stroke="#e8e8f4" stroke-opacity=".6" stroke-width="3" filter="url(#neonglow)"/></svg>
